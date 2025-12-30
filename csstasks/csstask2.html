@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout Example</title>
+
+  <style>
+    body {
+      margin: 40px;
+      font-family: Calibri, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 40px;
+    }
+
+    .top-left {
+      color: orange;
+      font-weight: bold;
+      font-size: xx-large;
+    }
+
+    .top-right {
+      text-align: right;
+            font-weight: bold;
+                  font-size: xx-large;
+                        grid-column: 2 / 3;
+
+
+
+    }
+
+    .bottom-left {
+      grid-column: 1 / 2;
+      font-size: large;
+    }
+
+    .bottom-right {
+      grid-column: 2 / 3;
+      text-align: right;
+        font-weight: 100;
+              font-size: large;
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Top row -->
+    <div class="top-left">Styling text</div><br>
+    <div class="top-right">Heading Num. 2</div>
+
+    <!-- Bottom row -->
+    <div class="bottom-left">my first paragraph.</div><br>
+    <div class="bottom-right">my second paragraph.</div>
+  </div>
+
+</body>
+</html>
