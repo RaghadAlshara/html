@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+
+        }
+
+        .box:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="changeText()" id="myButton">
+click me
+    </button>
+
+    <div class = "box">
+
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("myButton").innerText = "Text Changed!";
+        }
+    </script>
+</body>
+</html>
